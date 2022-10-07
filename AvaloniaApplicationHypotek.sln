@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.32916.344
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaApplicationHypoteka", "AvaloniaApplicationHypotek\AvaloniaApplicationHypoteka.csproj", "{6D30A97F-4823-47B7-A800-B09466B76E7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaApplicationHypoteka", "AvaloniaApplicationHypotek\AvaloniaApplicationHypoteka.csproj", "{6D30A97F-4823-47B7-A800-B09466B76E7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjectHypoteka", "TestProjectHypoteka\TestProjectHypoteka.csproj", "{29C6B964-75BB-47B4-A55B-67775B638AE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjectHypoteka", "TestProjectHypoteka\TestProjectHypoteka.csproj", "{29C6B964-75BB-47B4-A55B-67775B638AE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaApplicationFormApp", "AvaloniaApplicationFormApp\AvaloniaApplicationFormApp.csproj", "{6A8E02B5-49F3-4E39-ABC0-F39D57517700}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaApplicationFormApp", "AvaloniaApplicationFormApp\AvaloniaApplicationFormApp.csproj", "{6A8E02B5-49F3-4E39-ABC0-F39D57517700}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedProject", "SharedProject\SharedProject.csproj", "{FFC3561A-C945-4AE8-9057-9C157AD7B0F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedProject", "SharedProject\SharedProject.csproj", "{FFC3561A-C945-4AE8-9057-9C157AD7B0F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTestDbService", "ConsoleAppTestDbService\ConsoleAppTestDbService.csproj", "{E5333614-CB18-46A7-AEF3-F73EA3F93817}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FFC3561A-C945-4AE8-9057-9C157AD7B0F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFC3561A-C945-4AE8-9057-9C157AD7B0F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFC3561A-C945-4AE8-9057-9C157AD7B0F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5333614-CB18-46A7-AEF3-F73EA3F93817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5333614-CB18-46A7-AEF3-F73EA3F93817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5333614-CB18-46A7-AEF3-F73EA3F93817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5333614-CB18-46A7-AEF3-F73EA3F93817}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

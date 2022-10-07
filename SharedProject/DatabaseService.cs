@@ -13,7 +13,7 @@ namespace SharedProject
 
         public void EnsureCreated()
         {
-            if (System.IO.File.Exists(path))
+            if (!System.IO.File.Exists(path))
             {
                 using (var connection = new SqliteConnection($"Data Source={path}"))
                 {
