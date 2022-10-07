@@ -20,6 +20,7 @@ namespace SharedProject
                     var command = connection.CreateCommand();
                     command.CommandText = "CREATE TABLE Hypoteka (Id INTEGER PRIMARY KEY AUTOINCREMENT, LoanAmount DOUBLE, InterestRate DOUBLE, LoanTerm int)";
                 
+                    connection.Open();
                     int count = command.ExecuteNonQuery();
                 }
             }
@@ -30,11 +31,12 @@ namespace SharedProject
             using (var connection = new SqliteConnection($"Data Source={path}"))
             {
                 var command = connection.CreateCommand();
-                command.CommandText = $"INSERT INTO Hypoteka VALUES (@LoanAmount, @InterestRate, @LoanTerm)";
+                command.CommandText = $"INSERT INTO Hypoteka (LoanAmount, InterestRate, LoanTerm) VALUES (@LoanAmount, @InterestRate, @LoanTerm)";
                 command.Parameters.Add($"@LoanAmount", SqliteType.Real).Value = model.LoanAmount;
                 command.Parameters.Add($"@InterestRate", SqliteType.Real).Value = model.InterestRate;
                 command.Parameters.Add($"@LoanTerm", SqliteType.Real).Value = model.LoanTerm;
 
+                connection.Open();
                 int count = command.ExecuteNonQuery();
             }
         }
